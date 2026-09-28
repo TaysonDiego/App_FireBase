@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    tools:context="Modelo.AdicionarFilmeActivity">
+
+    <ImageView
+        android:id="@+id/ImagemItem"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="10dp"
+        android:scaleType="centerCrop"
+        tools:srcCompa="@tools:sample/avatars" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/NomeFilme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="Homem-Aranha" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/GeneroFilme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                tools:text="Ação" />
+
+            <TextView
+                android:id="@+id/AnoFilme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                tools:text="2023" />
+
+            <TextView
+                android:id="@+id/ClassificacaoFilme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="14+" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/DuracaoFilme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            tools:text="Duração: 120 min" />
+
+        <RatingBar
+            android:id="@+id/notaFilme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:isIndicator="true"
+            android:progressTint="@color/light_red"
+            android:rating="0.5"/>
+
+    </LinearLayout>
+
+</LinearLayout>
